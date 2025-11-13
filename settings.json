@@ -1,0 +1,46 @@
+{
+  "background.editor": {
+    "useFront": true,
+    "style": {
+      "background-position": "center",
+      "background-size": "cover",
+      "opacity": 0.15
+    },
+    "styles": [{}, {}, {}],
+    "images": [
+      "file:///C:/Users/hn.luannh/Pictures/Screenshots/Screenshot 2025-06-13 162324.png"
+    ],
+    "interval": 0,
+    "random": false
+  },
+  "background.fullscreen": {
+    "images": [
+      "file:///C:/Users/hn.luannh/Pictures/Screenshots/Screenshot 2025-06-13 162324.png"
+    ],
+    "opacity": 0.05,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  },
+  "background.sidebar": {
+    "images": [
+      "file:///C:/Users/hn.luannh/Pictures/Screenshots/Screenshot 2025-06-13 162324.png"
+    ],
+    "opacity": 0.1,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  },
+  "background.panel": {
+    "images": [
+      "file:///C:/Users/hn.luannh/Pictures/Screenshots/Screenshot 2025-06-13 162324.png"
+    ],
+    "opacity": 0.1,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": false
+  }
+}
