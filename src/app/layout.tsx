@@ -31,7 +31,6 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
   const { footerData, ctaData, headerData } = await getLayoutData();
 
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
     <html lang="vi">
@@ -57,8 +56,7 @@ const RootLayout = async ({ children }: { children: React.ReactNode }) => {
       </head>
       <body>
         {/* Analytics sẽ load sau khi page interactive để không block render */}
-        {gtmId && <GoogleTagManager gtmId={gtmId} />}
-        {gaId && <GoogleAnalytics gaId={gaId} />}
+        {/* {gtmId && <GoogleTagManager gtmId={gtmId} />} */}
 
         <Providers>
           <ModalProvider>

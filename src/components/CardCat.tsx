@@ -52,8 +52,9 @@ export const CardCat = ({
               height={350}
               src={image || `/blog.jpg`}
               alt={title}
-              priority
-              quality={75}
+              quality={65}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ width: "100%", height: "auto" }}
             />
           </Box>
           <Stack>
@@ -75,8 +76,8 @@ export const CardCat = ({
             </Heading>
             {isMounted && (
               <Text
-                color={"gray.500"}
-                fontSize={".8rem"}
+                color={"gray.600"}
+                fontSize={{ base: "sm", lg: "md" }}
                 css={{
                   display: "-webkit-box",
                   WebkitLineClamp: "4",

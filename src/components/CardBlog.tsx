@@ -48,11 +48,13 @@ export const CardBlog = ({
       style={{ textDecoration: "none" }}
       href={path}
       py={6}
+      px={2}
       pos={"relative"}
       transition={"all ease .4s"}
       _hover={{ transform: "translateY(-6px)" }}
       className="card-blog"
       h={"100%"}
+      minH="44px"
     >
       <Flex
         flexDir={"column"}
@@ -80,9 +82,10 @@ export const CardBlog = ({
                 width={600}
                 height={350}
                 src={image || `/blog.jpeg`}
-                style={{ maxHeight: imageH }}
+                style={{ maxHeight: imageH, width: "100%", height: "auto" }}
                 alt={title}
                 quality={75}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </Box>
           )}

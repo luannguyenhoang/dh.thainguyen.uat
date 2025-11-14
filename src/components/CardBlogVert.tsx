@@ -44,6 +44,8 @@ export const CardBlogVert = ({
       rounded={"sm"}
       as={Link}
       href={path ?? "#"}
+      minH="44px"
+      p={2}
     >
       <Box flex={1}>
         <Box m={"12px 24px"} rounded={"sm"} overflow={"hidden"}>
@@ -53,6 +55,7 @@ export const CardBlogVert = ({
             src={image || `/blog.jpeg`}
             alt={title}
             quality={75}
+            sizes="(max-width: 640px) 100vw, 320px"
             style={{ width: "100%", height: "auto" }}
           />
         </Box>

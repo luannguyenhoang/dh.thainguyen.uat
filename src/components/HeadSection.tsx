@@ -21,9 +21,13 @@ export const HeadSection = ({
       >
         {title}
       </Heading>
-      <Text color={"gray.500"} fontWeight={"thin"}>
+      <Heading
+        color={"gray.700"}
+        fontWeight={"thin"}
+        size={{ base: "sm", md: "md" }}
+      >
         {desc}
-      </Text>
+      </Heading>
     </VStack>
   );
 };

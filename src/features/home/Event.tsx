@@ -115,6 +115,10 @@ export const Event = ({
           colorScheme={"#064121"}
           variant={"link"}
           fontSize={{ base: "md", md: "xl" }}
+          minH="44px"
+          minW="44px"
+          px={4}
+          py={2}
         >
           Xem tất cả
         </Button>

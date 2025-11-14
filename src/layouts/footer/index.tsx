@@ -177,7 +177,12 @@ export const Footer = ({ footerData }: { footerData?: any }) => {
               <UnorderedList>
                 {listLink.map((item: any, index: number) => (
                   <ListItem key={index}>
-                    <Link href={item.link || "#"}>{item.name}</Link>
+                    <Link
+                      href={item.link || "#"}
+                      aria-label={item.name || `Link ${index + 1}`}
+                    >
+                      {item.name || `Link ${index + 1}`}
+                    </Link>
                   </ListItem>
                 ))}
               </UnorderedList>

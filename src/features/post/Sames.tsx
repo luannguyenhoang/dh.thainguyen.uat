@@ -78,7 +78,16 @@ export const SamePosts = ({
           <Heading as="h3" size="md">
             Có thể bạn quan tâm
           </Heading>
-          <Button as={Link} href="/tin-tuc" variant="link" colorScheme="red">
+          <Button
+            as={Link}
+            href="/tin-tuc"
+            variant="link"
+            colorScheme="red"
+            minH="44px"
+            minW="44px"
+            px={4}
+            py={2}
+          >
             Xem tất cả
           </Button>
         </HStack>

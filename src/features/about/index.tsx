@@ -57,6 +57,9 @@ export const About = () => {
             alt="Đại học Thái Nguyên"
             width={600}
             height={436}
+            quality={75}
+            sizes="(max-width: 768px) 100vw, 600px"
+            style={{ width: "100%", height: "auto" }}
           />
           <Text fontWeight={"bold"}>Trường Đại học Thái Nguyên</Text>
         </Grid>

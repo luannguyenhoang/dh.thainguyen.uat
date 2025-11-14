@@ -63,13 +63,16 @@ export const Item = ({
             alt={name}
             width={200}
             height={300}
-            style={{ borderRadius: "12px" }}
+            quality={75}
+            sizes="(max-width: 1024px) 100vw, 200px"
+            style={{ borderRadius: "12px", width: "100%", height: "auto" }}
           />
         </Box>
         <Image
           src={`/dialog.svg`}
           width={60}
           height={60}
+          sizes="60px"
           style={{ position: "absolute", top: 24, right: 32 }}
           alt="image"
         />

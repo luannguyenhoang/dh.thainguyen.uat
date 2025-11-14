@@ -50,7 +50,12 @@ export const Search = () => {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="outline" onClick={onOpen}>
+      <Button
+        ref={btnRef}
+        colorScheme="outline"
+        onClick={onOpen}
+        aria-label="Tìm kiếm"
+      >
         <Icon as={FiSearch} w={"24px"} h={"24px"} color="gray.800" />
       </Button>
       <Drawer

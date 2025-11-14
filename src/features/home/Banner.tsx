@@ -6,7 +6,7 @@ import Image from "next/image";
 export const Banner = ({ bannerData }: { bannerData?: any }) => {
   return (
     <Box>
-      <Box position={"relative"}>
+      <Box position={"relative"} w={"full"} overflow={"hidden"}>
         <Image
           src={
             bannerData?.anhBanner?.node?.mediaItemUrl ||
@@ -16,8 +16,10 @@ export const Banner = ({ bannerData }: { bannerData?: any }) => {
           height={1080}
           alt="Đại học Thái Nguyên"
           priority
+          fetchPriority="high"
           quality={75}
-          style={{ objectFit: "cover" }}
+          sizes="100vw"
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
       </Box>
     </Box>

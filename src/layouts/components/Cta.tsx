@@ -66,7 +66,7 @@ export const CTA = ({
       <Flex
         key={"e1"}
         height={"160px"}
-        width={"200px"}
+        width={"240px"}
         alignItems={"center"}
         top={"-82%"}
         left={"-105%"}

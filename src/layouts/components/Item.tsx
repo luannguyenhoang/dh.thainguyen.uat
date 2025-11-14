@@ -27,7 +27,13 @@ export const Item = ({
         src={image}
         alt={title}
         quality={75}
-        style={{ maxHeight: "150px", filter: "brightness(50%)" }}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        style={{
+          maxHeight: "150px",
+          filter: "brightness(50%)",
+          width: "100%",
+          height: "auto"
+        }}
       />
       <Box
         as={Flex}

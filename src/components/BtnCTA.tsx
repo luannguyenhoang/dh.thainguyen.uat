@@ -192,10 +192,14 @@ export const BtnEmail = memo(
       <Popover placement="left" trigger="hover" id={popoverId} isLazy>
         <PopoverTrigger>
           <HStack
+            as="button"
+            type="button"
             spacing={0}
             borderRadius={0}
             bg={"orange.500"}
             transform={"rotate(270deg)"}
+            role="button"
+            aria-label={BtnEmail?.tu_van_ngay?.title || "Tư vấn ngay"}
           >
             <IconButton
               icon={<MdEmail />}
@@ -205,8 +209,9 @@ export const BtnEmail = memo(
               bg={"orange.500"}
               p={"8px"}
               aria-label="email"
+              aria-hidden="true"
             />
-            <Text pr={2} color={"white"}>
+            <Text p={2} color={"white"}>
               {BtnEmail?.tu_van_ngay?.title || "Tư vấn ngay"}
             </Text>
           </HStack>

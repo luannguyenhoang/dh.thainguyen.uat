@@ -6,17 +6,8 @@ import { Box } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
-
-const Banner = dynamic(() => import("./Banner").then((mod) => mod.Banner), {
-  loading: () => <Loading />
-});
-
-const TextScrollHomePage = dynamic(
-  () => import("./TextScroll").then((mod) => mod.TextScrollHomePage),
-  {
-    loading: () => <Loading />
-  }
-);
+import { Banner } from "./Banner";
+import { TextScrollHomePage } from "./TextScroll";
 
 const Categorys = dynamic(
   () => import("@/features/home/Categorys").then((mod) => mod.Categorys),
