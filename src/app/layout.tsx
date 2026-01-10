@@ -17,9 +17,7 @@ const TrackingSession = dynamic(() =>
 const Footer = dynamic(() =>
   import("@/layouts/footer").then((mod) => mod.Footer)
 );
-const Header = dynamic(() =>
-  import("@/layouts/header").then((mod) => mod.Header)
-);
+import { Header } from "@/layouts/header";
 const Providers = dynamic(() =>
   import("@/app/provider").then((mod) => mod.Providers)
 );

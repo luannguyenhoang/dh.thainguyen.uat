@@ -6,7 +6,12 @@ import Image from "next/image";
 export const Banner = ({ bannerData }: { bannerData?: any }) => {
   return (
     <Box>
-      <Box position={"relative"} w={"full"} overflow={"hidden"}>
+      <Box
+        position={"relative"}
+        w={"full"}
+        overflow={"hidden"}
+        aspectRatio={16 / 9}
+      >
         <Image
           src={
             bannerData?.anhBanner?.node?.mediaItemUrl ||

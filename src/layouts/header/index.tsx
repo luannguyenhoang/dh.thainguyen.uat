@@ -4,18 +4,9 @@ import { BtnTheme } from "@/components/BtnTheme";
 import { Box, Container, Divider, Flex, useDisclosure } from "@chakra-ui/react";
 import dynamic from "next/dynamic";
 
-const DesktopNav = dynamic(
-  () => import("@/layouts/components/DeskhopNav").then((mod) => mod.DesktopNav),
-  {
-    ssr: false
-  }
-);
-const HeaderTop = dynamic(() =>
-  import("@/layouts/components/HeaderTop").then((mod) => mod.HeaderTop)
-);
-const MobileNav = dynamic(() =>
-  import("@/layouts/components/MobileNav").then((mod) => mod.MobileNav)
-);
+import { DesktopNav } from "@/layouts/components/DeskhopNav";
+import { HeaderTop } from "@/layouts/components/HeaderTop";
+import { MobileNav } from "@/layouts/components/MobileNav";
 
 const ModalBaseDynamic = dynamic(() =>
   import("@/components/Modal").then((mod) => mod.ModalBase)
